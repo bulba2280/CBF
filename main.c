@@ -40,7 +40,7 @@ int ReadFile(const char *name) {
     return 0;
 }
 
-// Проверка синтексав
+// Проверка синтекса
 int CheckSyntax() {
     int depth = 0;
     for (size_t i = 0; i < strlen(FileContent); i++) {
@@ -90,7 +90,6 @@ int TranspileToC(const char *out_filename) {
         }
     }
 
-    // Закрываем main
     fprintf(out, "\n    return 0;\n}\n");
     fclose(out);
     
