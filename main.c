@@ -59,7 +59,7 @@ int CheckSyntax() {
     return 0;
 }
 
-// 4. BF в C-lang
+// BF в C-lang
 int TranspileToC(const char *out_filename) {
     FILE *out = fopen(out_filename, "w");
     if (!out) {
